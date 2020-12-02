@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+ font-family: 'Roboto'; 
+}
+.heading {text-align: center;}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap:wrap;
+  max-width: 1120px;
+  margin: 0 auto;
+
+}
+
+.item{
+  position: relative;
+  width: 30%;
+  height: 300px;
+  text-align: center;
+  margin: 10px;
+  background-image: linear-gradient(#8AC1BE, #40CADB,#3CB9E9); 
+  display: flex;  
+  align-items: center; /*this center vertically*/
+  justify-content: center;
+  background-size: cover;
+ 
+}
+.item-content{
+  height: 120px;
+  width: 300px;
+  background-color: #FFF;
+  display: none;
+}
+.item:hover .item-content{
+  display: block;
+  animation-duration: 0.7s;
+  animation-name: slidein;
+  box-shadow: 1px 1px 10px #ccc;
+}
+.item1{
+  background-image:url(https://picsum.photos/id/200/300/300?random)
+}
+.item2{
+  background-image:url(https://picsum.photos/id/100/300/300)
+
+}
+.item3{
+  background-image:url(https://picsum.photos/id/212/300/300)
+}
+.item4{
+  background-image:url(https://picsum.photos/id/213/300/300)
+}
+
+.item5{
+  background-image:url(https://picsum.photos/id/215/300/300)
+}
+
+.item6{
+  background-image:url(https://picsum.photos/id/219/300/300)
+}
+
+
+.item7{
+  background-image:url(https://picsum.photos/id/244/300/300)
+}
+
+
+
+
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+  }
+
+  to {
+    margin-left: 0%;
+
+  }
+}
